@@ -1,9 +1,14 @@
 from setuptools import setup, find_packages
 
+with open('README.md', encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(
     name='redashsync',
-    version='0.0.7',
+    version='0.0.8',
     description='A tool integrating Redash with Slack',
+    long_description = long_description,
+    long_description_content_type='text/markdown',
     author='Yun',
     author_email='ysjhmtb@gmail.com',
     url='',
